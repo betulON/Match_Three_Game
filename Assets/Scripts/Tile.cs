@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Tile : MonoBehaviour {
+public class Tile : MonoBehaviour
+{
+	public int _xIndex;
+	public int _yIndex;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	private Board _board;
+
+	public void Init(int xIndex, int yIndex, Board board)
+	{
+		_xIndex = xIndex;
+		_yIndex = yIndex;
+		_board = board;
 	}
 }
